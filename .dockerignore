@@ -1,0 +1,53 @@
+# Python environment and cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# FastF1 data cache (don't package 200MB+ of downloads into Docker image)
+cache/
+
+# Local database logs / metastore
+metastore_db/
+derby.log
+spark-warehouse/
+
+# IDE configurations
+.idea/
+.vscode/
+
+# Git files
+.git/
+.gitignore
+
+# Docker configuration files
+Dockerfile
+.dockerignore
+
+# Environment secrets
+.env
+
+# Streamlit cache / config
+.streamlit/
+
+# Local user configurations
+config/selected_races.json
+config/last_pipeline_config.json
+
+# Personal docs / interview prep
+docs/portfolio_kit.md
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+

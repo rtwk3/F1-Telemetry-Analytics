@@ -5,7 +5,6 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.35.0-red?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0.3-violet)](https://xgboost.readthedocs.io/)
 [![Hive Support](https://img.shields.io/badge/Hive-Supported-yellow?logo=apachehive&logoColor=white)](https://hive.apache.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
 An end-to-end Formula 1 telemetry analytics platform built using real-world race data. The system ingests telemetry, weather, and results data, processes it through a Medallion-style ETL pipeline, runs advanced analytical aggregations in Spark, exposes tables through a local Hive metastore, trains an XGBoost ML pipeline to predict lap times, and serves interactive visualizations via a Streamlit dashboard.
 
@@ -304,6 +303,22 @@ Run the web application locally:
 streamlit run dashboards/streamlit_app.py
 ```
 
+### Running with Docker
+Alternatively, you can build and run the application in a Docker container (which packages Python, Java, and all required Spark/ML dependencies):
+
+1. **Build the Docker Image**:
+   ```bash
+   docker build -t f1-telemetry-analytics .
+   ```
+
+2. **Run the Container**:
+   ```bash
+   docker run -p 8501:8501 f1-telemetry-analytics
+   ```
+
+3. **Access the Dashboard**:
+   Open your browser and navigate to `http://localhost:8501`.
+
 ---
 
 ## 9. Testing & Quality Assurance
@@ -322,9 +337,3 @@ python -m unittest discover -s tests
 2. **dbt Modeling**: Move SQL queries to a formal dbt Core pipeline running against a cloud database or Spark cluster.
 3. **Telemetry Ingestion**: Integrate FastF1 telemetry streams (car speed, throttle, brake) to predict cornering speeds.
 4. **CI/CD Pipeline**: Automate data quality checks and pytest triggers via GitHub Actions.
-
----
-
-## 11. License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
