@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# FastF1 Cache
+cache/
+
+# Data files
+data/raw/
+data/processed/
+data/warehouse/
+
+# Models
+models/*.pkl
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+
+# Spark
+metastore_db/
+derby.log
+
+# Streamlit cache
+.streamlit/cache/
+
+# User configuration
+config/selected_races.json
+config/last_pipeline_config.json
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Spark Warehouse
+spark-warehouse/
+
+# Windows
+desktop.ini
+
+# Type checking / linting
+.mypy_cache/
+.ruff_cache/
+
+# Portfolio & Interview prep
+docs/portfolio_kit.md
