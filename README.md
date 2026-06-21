@@ -8,6 +8,28 @@
 
 An end-to-end Formula 1 telemetry analytics platform built using real-world race data. The system ingests telemetry, weather, and results data, processes it through a Medallion-style ETL pipeline, runs advanced analytical aggregations in Spark, exposes tables through a local Hive metastore, trains an XGBoost ML pipeline to predict lap times, and serves interactive visualizations via a Streamlit dashboard.
 
+## 📚 Table of Contents
+
+<details open>
+<summary><b>Click to navigate</b></summary>
+
+- [🖥️ Dashboard Preview](#dashboard-preview)
+- [📝 Resume Summary](#resume-summary)
+- [⭐ Key Engineering Highlights](#key-engineering-highlights)
+- [🏗️ Architecture Overview](#1-architecture-overview)
+- [⚙️ Technology Stack](#2-technology-stack)
+- [📂 Project Structure](#3-project-structure)
+- [🔄 ETL & Analytical Pipelines](#4-etl--analytical-pipelines)
+- [🤖 Machine Learning Pipeline](#5-machine-learning-xgboost-pipeline)
+- [📊 Streamlit Dashboard](#6-streamlit-dashboard)
+- [📈 Results](#results)
+- [🛠️ Installation & Setup](#7-installation--setup)
+- [🚀 How to Run](#8-how-to-run)
+- [✅ Testing & Quality Assurance](#9-testing--quality-assurance)
+- [🔮 Future Enhancements](#10-future-enhancements)
+
+</details>
+
 ## Dashboard Preview
 
 ![Dashboard](dashboards/assets/screenshots/dashboard.png)
